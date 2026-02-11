@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <ul class="nav-links" id="navlinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 id="profile-name"></h1>
+      <h2 id="profile-title"></h2>
+      <p id="profile-tagline"></p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div id="profile-about"></div>
+
+    </div>
+  </section>
+
+ <!-- skills -->
+<section class="skills" id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid" id="skillsGrid">
+    <!-- Skills will load dynamically -->
+    </div>
+  
+  </div>
+</section>
+
+
+<!-- Education-->
+<section class="education" id="education">
+  <div class="container">
+    <h2>Education</h2>
+    <div id="educationGrid"></div>
+  </div>
+</section>
+
+
+
+<!-- Experience -->
+ <section class="experience" id="experience">
+  <div class="container">
+    <h2>Experience</h2>
+    <div id="experienceGrid"></div>
+  </div>
+</section>
+
+
+
+<section class="projects" id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+     <div class="projects-grid" id="projectsGrid">
+      <!-- Projects will be injected here -->
+     </div>
+  </div>
+</section>
+
+<!-- RESUME SECTION -->
+<section class="resume" id="resume">
+  <div class="container">
+    <h2>Resume</h2>
+
+    <p>
+      You can view my resume online or download a copy for detailed
+      information about my education, skills, and experience.
+    </p>
+
+    <div class="resume-actions">
+      <a 
+        href="resume/Prathmesh_Tatar_Resume.pdf" 
+        class="resume-btn view-btn" 
+        target="_blank"
+      >
+        View Resume
+      </a>
+
+      <a 
+        href="resume/Prathmesh_Tatar_Resume.pdf" 
+        class="resume-btn download-btn" 
+        download
+      >
+        Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+
+    <div class="contact-wrapper">
+
+      <!-- LEFT: CONTACT FORM -->
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" id="firstName" placeholder="First name" required>
+          <input type="text" id="lastName" placeholder="Last name" required>
+        </div>
+
+        <input type="email" placeholder="Email address" id="email" aria-label="Email address" required>
+
+
+        <textarea id="message" placeholder="Message" rows="6" required></textarea>
+
+        <button type="submit" id="submitBtn">Send Message</button>
+        <small id="formMsg"></small>
+      </form>
+
+      <!-- RIGHT: CONTACT INFO -->
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+
+        <p>📍 Nashik, Maharashtra, India</p>
+        <p class="copy-phone" data-phone="+919309348390">📞 <span>+91 93093 48390</span> </p>
+        <p>📧 <a href="mailto:prathmeshtatar05@gmail.com">prathmeshtatar05@gmail.com</a></p>
+        <p>🔗 <a href="https://linkedin.com/in/prathmesh-tatar" target="_blank">LinkedIn.com/PrathmeshTatar</a></p>
+        <p>🌐 <a href="https://github.com/PrathmeshTatar" target="_blank">github.com/PrathmeshTatar</a></p>
+        
+            <small id="copyMsg"></small>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
