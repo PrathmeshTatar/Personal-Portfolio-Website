@@ -58,8 +58,10 @@ A production-ready full-stack portfolio website built using:
 
 ## Live Demo
 
-Frontend: (Add after deployment)  
-Backend API: (Add after deployment)
+## Live Demo
+
+Frontend: https://personal-portfolio.netlify.app  
+Backend API: https://personal-portfolio-website-lqum.onrender.com
 
 ---
 
