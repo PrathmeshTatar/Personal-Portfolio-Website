@@ -9,7 +9,7 @@ menuToggle.addEventListener("click", () => {
 
 async function loadProfile() {
   try {
-    const res = await fetch("http://localhost:5000/api/profile");
+    const res = await fetch("https://personal-portfolio-website-lqum.onrender.com/api/profile");
     const data = await res.json();
 
     document.getElementById("profile-name").textContent = data.name;
@@ -107,7 +107,7 @@ if (contactForm) {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch("https://personal-portfolio-website-lqum.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -137,7 +137,7 @@ if (contactForm) {
 
 async function loadExperience() {
   try {
-    const res = await fetch("http://localhost:5000/api/experience");
+    const res = await fetch("https://personal-portfolio-website-lqum.onrender.com/api/experience");
     const data = await res.json();
 
     const container = document.getElementById("experienceGrid");
@@ -175,7 +175,7 @@ const projectsGrid = document.getElementById("projectsGrid");
 
 async function loadProjects() {
   try {
-    const response = await fetch("http://localhost:5000/api/projects");
+    const response = await fetch("https://personal-portfolio-website-lqum.onrender.com/api/projects");
     const projects = await response.json();
 
     projectsGrid.innerHTML = "";
@@ -209,7 +209,7 @@ if (projectsGrid) {
 
 async function loadEducation() {
   try {
-    const res = await fetch("http://localhost:5000/api/education");
+    const res = await fetch("https://personal-portfolio-website-lqum.onrender.com/api/education");
     const data = await res.json();
 
     const container = document.getElementById("educationGrid");
